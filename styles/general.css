@@ -1,0 +1,177 @@
+html {
+    min-height: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    font-family: Roboto, Arial, sans-serif;
+    position: relative;
+}
+
+.search-form {
+    height: 44px;
+    display: flex;
+    margin: auto;
+}
+
+.search-input {
+    width: 100%;
+    font: 18px Roboto, Arial, sans-serif;
+    border: 1px solid #adadad;
+    border-right: none;
+    padding-left: 10px;
+    border-radius: 7px 0 0 7px;
+    outline: none;
+}
+
+.search-button {
+    width: 100px;
+    font: 18px arial,sans-serif;
+    color: white;
+    border: 0;
+    background-color: #e32525;
+    border-radius: 0 7px 7px 0;
+}
+
+.search-button:focus {
+    outline: none;
+}
+
+input[type=text]:focus {
+    border: 2px solid #e32525;
+    border-right: none;
+}
+
+.search-button:hover {
+    cursor:pointer;
+    background-color: red;
+}
+
+.search-img {
+    margin: auto;
+    width: 80%;
+    display: block;
+}
+
+.form-stripe-active {
+    padding: 10px 0;
+    box-shadow: none;
+    background-color: white;
+    z-index: 2;
+    width: 100%;
+}
+
+.result-box {
+    padding: 74px 20px 0 20px;
+    margin: auto;
+    max-width: 1200px;
+}
+
+.result-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.result-list > li {
+    margin: 10px;
+    width: 250px;
+    position: relative;
+}
+
+.result-list > li:hover {
+    cursor: pointer;
+}
+
+.result-list > li > img {
+    width: 250px;
+}
+
+.clip-title {
+    white-space: normal;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 8px 0 8px;
+}
+
+.channel-title, .view-num,  .publishing-date {
+    color: rgba(17, 17, 17, 0.6);
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.time {
+    background: #363636c4;
+    border-radius: 2px;
+    color: #ededed;
+    padding: 2px 5px;
+    font: 12px Roboto, Arial, sans-serif;
+    position: absolute;
+    top: 0;
+}
+
+.indicator {
+    text-align: center;
+    font-size: 30px;
+}
+
+.loader {
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@media only screen and (max-width: 719px) { 
+    .search-form {
+        margin: 0 10px;
+    }
+
+    .result-list > li {
+        width: 100%;
+    }
+
+    .result-list > li > img {
+        width: 100%;
+    }
+
+    .result-box {
+        padding: 74px 0 0 0;
+    }
+}
+
+@media only screen and (min-width: 720px) and (max-width: 995px) {
+    .result-box {
+        padding: 74px 10px 0 10px;
+    }
+
+    .search-img {
+        height: 40%;
+        width: auto;
+    }
+
+    .search-form {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 996px) {
+    .result-box {
+        padding: 74px 10px 0 10px;
+    }
+
+    .search-img {
+        height: 40%;
+        width: auto;
+    }
+
+    .search-form {
+        width: 60%;
+    }
+}
