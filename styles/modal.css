@@ -159,11 +159,6 @@ hr {
         padding: 74px 10px 0 10px;
     }
 
-    .search-img {
-        height: 40%;
-        width: auto;
-    }
-
     .search-form {
         width: 80%;
     }
@@ -182,11 +177,6 @@ hr {
 
     .view-modal {
         max-width: 1200px;
-    }
-
-    .search-img {
-        height: 40%;
-        width: auto;
     }
 
     .search-form {
